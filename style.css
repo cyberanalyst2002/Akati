@@ -1,0 +1,144 @@
+/* Import Variables */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap);
+
+/* Basic CSS */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.form-01-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: url('images/bggg.gif') no-repeat center center;
+  background-size: cover;
+}
+
+.form-cover {
+  background: rgba(0, 0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-sub-main {
+  background: rgb(251, 250, 243);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-sub-main img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.form-sub-main p {
+  color: #510400;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group1 {
+  margin-bottom: 20px;
+  border: 2px solid gold; /* Add a golden border */
+  padding: 10px; /* Optional: Add padding to make the border stand out more */
+  border-radius: 3px; /* Optional: Add border radius for rounded corners */
+}
+
+.form-control {
+  background: transparent;
+  color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+.form-control:focus {
+  background: transparent;
+  color: #000000;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+.field-icon {
+  float: right;
+  margin-right: 10px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.check_box_main a {
+  color: #800000;
+  font-weight: bold;
+}
+
+.btn_uy button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #510400; /* Green background color */
+  color: #fff;
+  text-align: center;
+  border: none; /* Remove default button border */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer; /* Ensure cursor changes to pointer on hover */
+}
+
+.btn_uy button:hover {
+  background: #800000; /* Darker green color on hover */
+}
+
+/* Shining Text Effect */
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.shiny-text {
+  display: inline-block;
+  color: #510400; /* Preserve the original color */
+  position: relative;
+}
+
+.shiny-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  background-size: 200%;
+  animation: shine 2s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
